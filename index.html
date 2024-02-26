@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="application-name" content="Portfolio Website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio Website of Arun Prasad Paneru holding a bachelor degree in computer engineering from Khwopa College of Engineering "
+    />
+    <meta
+      name="keywords"
+      content="Portfolio,computer engineer,developer,HTML,CSS,Javascript"
+    />
+    <meta name="author" content="Arun Prasad Paneru" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/198dc01994.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Arun-Portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img class="logo" src="./Images/logo1.png" alt="Logo" />
+          <ul id="sidemenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Computer Engineer</p>
+          <h1>
+            Hi,I'm <span>Arun</span> Paneru <br />I hail from
+            <span id="nepal">Nepal</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./Images/profile.jpg" alt="profile" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello, I am a final semester student pursuing my Bachelor of
+              Engineering (BE) degree in Computer Science and Technology at
+              Khwopa College of Engineering. I've keen interest in software
+              development and integrating AI features to enhance functionality.
+            </p>
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="openTab(event,'skills')"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab(event,'experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab(event,'education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="openTab(event,'certification')">
+                Certification
+              </p>
+            </div>
+            <div class="tab-contents active-content-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span> <br /></li>
+                <li><span>App Development</span><br /></li>
+                <li><span>Data Science</span> <br /></li>
+                <li><span>Machine Learning</span> <br /></li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Jan,2024 - Current</span><br />Software Engineer Intern
+                  at AEIRC.tech
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Dec,2019 - May,2024</span> <br />
+                  BE/BCT from Khwopa College of Engineering,Nepal
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="certification">
+              <ul>
+                <li>
+                  <span>
+                    <a
+                      target="_blank"
+                      href="https://www.udemy.com/certificate/UC-bcc1b6d2-d13f-4602-a1e8-153412ce3604/"
+                      >Flutter & Dart-Udemy</a
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <a
+                      target="_blank"
+                      href="https://www.credly.com/badges/365003b8-7138-40f7-8dc5-6e5a0849d9be/linked_in_profile"
+                      >Aws CCP</a
+                    ></span
+                  >
+                </li>
+
+                <li>
+                  <span
+                    ><a
+                      target="_blank"
+                      href="https://www.coursera.org/account/accomplishments/verify/RKBTMF9SVSBV"
+                      >Web Development-IBM</a
+                    ></span
+                  >
+                </li>
+                <li>
+                  <span
+                    ><a
+                      target="_blank"
+                      href="https://www.coursera.org/account/accomplishments/certificate/TFECA7QJFLEE"
+                      >Supervised Machine Learning</a
+                    ></span
+                  >
+                </li>
+                <li>
+                  <span>
+                    <a
+                      target="_blank"
+                      href="https://www.coursera.org/account/accomplishments/certificate/4KRAFHM6P35N"
+                      >Advanced Learning Algorithms</a
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <a
+                      target="_blank"
+                      href="https://www.locus.com.np/verify/?id=d16a9359-4938-4c39-8011-64ab673a7b57"
+                    >
+                      Hardware Fellowship-Pulchowk Campus,IOE
+                    </a></span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+
+        <div class="services-list">
+          <div>
+            <i class="fa-regular fa-file"></i>
+            <h2>Web Development</h2>
+
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h2>Mobile App Development</h2>
+
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <h2>Data Science and Machine Learning</h2>
+
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects">
+          <h2 class="project-text">
+            Will be available soon. Check github account for now.
+          </h2>
+          <a href="https://github.com/Arunpaneru" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="/Images/website.jpg" alt="Website" />
+            <div class="layer">
+              <h3>Demo Website</h3>
+              <p>
+                This website is a Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Perspiciatis, voluptas?
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i> </a>
+              <span class="tooltip">Github_Repo</span>
+            </div>
+          </div>
+          <div class="project">
+            <img src="/Images/website.jpg" alt="Mobile_App" />
+            <div class="layer">
+              <h3>Demo APP</h3>
+              <p>
+                This is a Mobile application Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Perspiciatis, voluptas?
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              <span class="tooltip">Github_Repo</span>
+            </div>
+          </div>
+          <div class="project">
+            <img src="Images/website.jpg" alt="Data_analysis" />
+            <div class="layer">
+              <h3>Demo Analysis</h3>
+              <p>
+                This is a Mobile application Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Perspiciatis, voluptas?
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i> </a>
+              <span class="tooltip">Github_Repo</span>
+            </div>
+          </div>
+        </div>
+        <a class="see_btn" href="Projects.html">See more</a>
+      </div>
+    </div> -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="contacts">
+              <a id="mailtel" href="mailto:arunpaneru01@gmail.com">
+                <i class="fa-solid fa-paper-plane"></i>arunpaneru01@gmail.com</a
+              >
+              <br />
+              <a id="mailtel" href="tel:+9779868860660"
+                ><i class="fa-solid fa-square-phone"></i>9868860660</a
+              >
+            </div>
+
+            <div class="social-icons">
+              <a
+                id="s-icon"
+                href="www.linkedin.com/in/arun-prasad-paneru-102347268"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                id="s-icon"
+                href="https://github.com/Arunpaneru"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+
+            <a href="Images/Resume-Arun-Prasad-Paneru.pdf" class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Name" required />
+              <input type="email" name="Email" placeholder="Email" required />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Suggestion"
+              ></textarea>
+              <button class="btn btn2" type="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <footer>Copyright &copy; Arun. All rights are reserved.</footer>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
